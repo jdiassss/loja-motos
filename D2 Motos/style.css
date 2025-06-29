@@ -1,0 +1,44 @@
+.navbar-custom {
+  background-color: black;
+}
+
+.navbar-custom .navbar-item,
+.navbar-custom .navbar-burger span {
+  color: white;
+}
+
+.navbar-custom .navbar-item:hover {
+  background-color: #222;
+  color: white;
+}
+
+.navbar-custom .navbar-burger {
+  color: white;
+}
+
+.swiper {
+  width: 100%;
+  height: 400px; /* Altura da vitrine */
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Altera a cor das setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white;
+}
+
+/* Altera a cor das bolinhas (paginação) */
+.swiper-pagination-bullet {
+  background-color: white;
+}
+
+/* Quando a bolinha está ativa (slide atual) */
+.swiper-pagination-bullet-active {
+  background-color: white;
+}

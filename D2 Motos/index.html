@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D2 Motos</title>
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+  <!-- Seu CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-custom" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <img src="images/Logo_D2_horizontal.png" alt="Logo da Loja">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menuPrincipal">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="menuPrincipal" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Início</a>
+        <a class="navbar-item" href="#">Motos</a>
+        <a class="navbar-item" href="#">Sobre</a>
+        <a class="navbar-item" href="#">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrossel Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/frente-loja.jpg" alt="Moto 1" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/moto1.jpg" alt="Moto 2" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/motos2.png" alt="Moto 3" />
+      </div>
+    </div>
+
+    <!-- Botões de navegação -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title has-text-centered">Nossas Motos</h2>
+
+    <div class="columns is-multiline">
+      <!-- Card 1 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/motos-a-venda/moto1.jpg" alt="Moto 1">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Honda CB500X</p>
+            <p>Uma moto econômica, ideal para o dia a dia. Excelente desempenho e conforto.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/motos-a-venda/moto2.jpg" alt="Moto 2">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Honda Twister 250</p>
+            <p>Potência e estilo em uma só moto. Ideal para quem busca desempenho.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="images/motos-a-venda/moto3.jpg" alt="Moto 3">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-5">Sahara Adventure 300</p>
+            <p>Visual agressivo e tecnologia de ponta. A escolha dos exigentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
